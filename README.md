@@ -74,17 +74,19 @@ npm run preview
 
 ## Deployment
 
-This project is configured for Vercel via the bundled Vite/Nitro setup (`npm run build`).
+Repository: [ahmaddroobi99/network-intelligence-dashboard](https://github.com/ahmaddroobi99/network-intelligence-dashboard)
+
+This project is a TanStack Start app. Production builds emit a Vercel/Nitro output (`npm run build`).
 
 ### Netlify
 
-`netlify.toml` builds with `npm run build` and publishes `dist/client`. SPA fallback is configured so refreshes do not 404.
+A Netlify project is provisioned at `network-intelligence-dashboard.netlify.app`.
 
-1. Push this repository to GitHub.
-2. Create a Netlify site from the repo.
-3. Build command: `npm run build`
-4. Publish directory: `dist/client`
-5. Confirm the production URL loads on desktop and mobile.
+`netlify.toml` builds with `npm run build`. If the host expects a static publish directory, point it at the generated client assets after a successful build. SPA fallback is configured so refreshes do not 404.
+
+1. Connect the GitHub repository to the Netlify project.
+2. Build command: `npm run build`
+3. Confirm the production URL loads on desktop and mobile.
 
 Do not commit secrets or `.env` files.
 
